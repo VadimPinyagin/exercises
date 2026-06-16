@@ -1,0 +1,43 @@
+.garden {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #4c9a50;
+}
+
+.fox-garden {
+  margin: 0 auto;
+  width: 420px;
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: 50px;
+  background-color: #5b9de4;
+}
+
+.fox-garden__bed {
+  background-color: #8e9cff;
+  background-image: url("../../img/Grunt-dlya-rasteniy-main.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+
+  // &:nth-child(9n) {
+  //   grid-column: 3 / span 2;
+  //   grid-row: span 2;
+  // }
+
+  &:nth-child(10n + 1) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  // &:nth-child(7n) + :not(:nth-child(5n)) {
+  //   grid-column: 1;
+  // }
+}
