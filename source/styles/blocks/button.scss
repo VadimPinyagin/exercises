@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  background: url("../../images/bg/vegetables.png") no-repeat center / contain;
+  width: 100px;
+  aspect-ratio: 1;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}

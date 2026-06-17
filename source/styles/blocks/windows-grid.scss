@@ -2,42 +2,96 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #4c9a50;
 }
 
+.garden__group {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.garden__group-illustration {
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    aspect-ratio: 1;
+    mask: url("../../images/arrow.png") no-repeat center / cover;
+    background-color: #fe0032;
+  }
+}
+
 .fox-garden {
-  margin: 0 auto;
   width: 420px;
   padding: 24px;
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(4, auto);
   grid-auto-rows: 50px;
-  background-color: #5b9de4;
+  background: #5b9de4 url("../../images/kostki-brukowe.jpg") center / cover;
 }
 
 .fox-garden__bed {
-  background-color: #8e9cff;
-  background-image: url("../../img/Grunt-dlya-rasteniy-main.jpg");
+  background: #8e9cff url("../../images/bg/garden-bed.jpg") no-repeat center / cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
+  justify-content: right;
+  font-size: 20px;
   font-weight: 600;
+  color: #ffffff;
 
-  // &:nth-child(9n) {
-  //   grid-column: 3 / span 2;
-  //   grid-row: span 2;
-  // }
+  &:nth-child(10n) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
 
   &:nth-child(10n + 1) {
     grid-column: span 2;
     grid-row: span 2;
   }
+}
 
-  // &:nth-child(7n) + :not(:nth-child(5n)) {
-  //   grid-column: 1;
-  // }
+.fox-garden__bed--mentor {
+  background: url("../../images/fox/fox-md.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--beet {
+  background: url("../../images/vegetables/beet.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--carrot {
+  background: url("../../images/vegetables/carrot.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--eggplant {
+  background: url("../../images/vegetables/eggplant.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--potato {
+  background: url("../../images/vegetables/potato.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--cauliflower {
+  background: url("../../images/vegetables/cauliflower.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--onion {
+  background: url("../../images/vegetables/onion.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--radish {
+  background: url("../../images/vegetables/radish.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--pumpkin {
+  background: url("../../images/vegetables/pumpkin.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--zucchini {
+  background: url("../../images/vegetables/zucchini.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
 }
