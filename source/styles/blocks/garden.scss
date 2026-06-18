@@ -71,6 +71,10 @@
   background: url("../../images/fox/fox-md.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
 }
 
+.fox-garden__bed--attacking {
+  background: url("../../images/fox/fox-attacking.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
 .fox-garden__bed--beet {
   background: url("../../images/vegetables/beet.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
 }

@@ -11,4 +11,8 @@ button.addEventListener('click', () => {
   newBed.textContent = nextNumber;
 
   garden.appendChild(newBed);
+
+  if(nextNumber === 11) {
+    newBed.classList.add('fox-garden__bed--lamb');
+  }
 });
