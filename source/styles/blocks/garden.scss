@@ -49,7 +49,6 @@
   font-weight: 600;
   color: #ffffff;
 
-  &:first-child,
   &:nth-child(8n + 1),
   &:nth-child(8n + 7){
     grid-column: span 2;
