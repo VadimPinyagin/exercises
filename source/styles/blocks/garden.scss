@@ -1,13 +1,15 @@
 .garden {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-items: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", sans-serif;
   color: #4c9a50;
 }
 
 .garden__title {
   text-align: center;
+  grid-column: span 2;
 }
 
 .garden__group {
@@ -34,6 +36,7 @@
 .fox-garden {
   width: 300px;
   padding: 8px;
+  grid-column: 1 / 2;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
@@ -50,12 +53,12 @@
   color: #ffffff;
 
   &:nth-child(8n + 1),
-  &:nth-child(8n + 7){
+  &:nth-child(8n + 7) {
     grid-column: span 2;
     grid-row: span 2;
   }
 
-  &:nth-child(4n + 4) {
+  &:nth-child(4n) {
     grid-column: span 2;
   }
 
@@ -78,6 +81,9 @@
 
 .fox-garden__bed--mentor {
   background: url("../../images/fox/fox-md.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+.fox-garden__bed--fox-roaming {
+  background: url("../../images/fox/fox-roaming.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
 }
 
 .fox-garden__bed--attacking {
@@ -121,5 +127,15 @@
 }
 
 .fox-garden__bed--lamb {
-  background: url("../../images/lamb.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+  background: url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--cumin {
+  background: url("../../images/vegetables/cumin.jpg") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+.fox-garden__bed--barberry {
+  background: url("../../images/vegetables/barbaris.jpg") no-repeat center / cover, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+.fox-garden__bed--basilik {
+  background: url("../../images/vegetables/basilik.jpg") no-repeat center / cover, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
 }
