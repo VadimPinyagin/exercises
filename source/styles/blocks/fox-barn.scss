@@ -20,3 +20,15 @@
   grid-auto-rows: 36px;
   gap: 4px;
 }
+
+.fox-barn__shelf-item {
+  background: url("../../images/bg/wooden-shelf.png") no-repeat center / cover, url("../../images/vegetables/onion.png") no-repeat center / contain;
+}
+
+.fox-barn__shelf--onion {
+  background: url("../../images/vegetables/onion.png") no-repeat center / contain, url("../../images/bg/wooden-shelf.png") no-repeat center / cover;
+}
+
+.fox-barn__shelf--pumpkin {
+  background: url("../../images/vegetables/pumpkin.png") no-repeat center / contain, url("../../images/bg/wooden-shelf.png") no-repeat center / cover;
+}
