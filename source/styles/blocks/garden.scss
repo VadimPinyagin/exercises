@@ -2,8 +2,6 @@
   display: grid;
   align-items: center;
   justify-items: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", sans-serif;
-  color: #4c9a50;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);
@@ -12,7 +10,12 @@
 }
 
 .garden__title {
+  font-family: "Bounce", "Arial", sans-serif;
   text-align: center;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #f67c01;
 
   // @media (min-width: $tablet-width) {
   //   grid-column: span 3;
