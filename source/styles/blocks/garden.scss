@@ -25,7 +25,7 @@
 .garden__home {
   width: 290px;
   height: 290px;
-  background: url("../../images/home.svg") no-repeat center / cover;
+  background: url("../../images/home.svg") 10px 85px / 98% no-repeat;
   grid-row: 2;
   grid-column: 1;
 
@@ -35,7 +35,7 @@
 }
 
 .garden__home--fox-cleaning {
-  background: url("../../images/fox/fox-cleaning.png") 137px 223px / 14% no-repeat, url("../../images/home.svg") no-repeat center / cover, ;
+  background: url("../../images/fox/fox-cleaning.png") 104px 234px / 14% no-repeat, url("../../images/home.svg") 10px 85px / 98% no-repeat;
 }
 
 .garden__group {
