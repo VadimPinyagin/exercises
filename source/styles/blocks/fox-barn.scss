@@ -1,19 +1,18 @@
 .fox-barn {
   width: 300px;
   aspect-ratio: 1;
-  background: url("../../images/bg/barn.png") no-repeat center / cover;
+  background: url("../../images/bg/barn.png") no-repeat bottom / cover;
   display: flex;
-  justify-content: center;
   align-items: end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .fox-barn__shelf {
   list-style: none;
   padding: 0;
-  margin-bottom: 45px;
-  margin-left: 20px;
+  margin: 0;
   width: 100px;
-  aspect-ratio: 1;
   display: grid;
   grid-column: 1 / 2;
   grid-template-columns: repeat(4, 1fr);
