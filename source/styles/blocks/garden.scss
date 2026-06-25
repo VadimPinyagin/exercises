@@ -101,15 +101,14 @@
   //   grid-column: span 2;
   // }
 
-  &:nth-child(9n+1),
-  &:nth-child(9n+8),
-  &:nth-child(9n+10) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-
   &:nth-child(9n) {
     grid-column: span 2;
+  }
+
+  &:nth-child(9n+1),
+  &:nth-child(9n+8) {
+    grid-column: span 2;
+    grid-row: span 2;
   }
 }
 
