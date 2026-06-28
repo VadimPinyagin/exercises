@@ -41,12 +41,20 @@
   grid-row: 4;
 }
 
-.garden__button-add {
+.garden__button-add-gardenbed {
   background: url("../../images/bg/add-garden-bed.png") no-repeat center / contain;
 }
 
-.garden__button-remove {
+.garden__button-remove-gardenbed {
   background: url("../../images/bg/to-dig-up.png") no-repeat center / contain;
+}
+
+.garden__button-add-flowerbed {
+  background: url("../../images/bg/add-flower-bed.png") no-repeat center / contain;
+}
+
+.garden__button-remove-flowerbed {
+  background: url("../../images/bg/remove-flower-bed.png") no-repeat center / contain;
 }
 
 .garden__barn {
