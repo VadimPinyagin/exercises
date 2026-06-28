@@ -46,7 +46,7 @@
     mask-image: conic-gradient(from 270deg at 52% 53%, transparent 90deg, #000 90deg);
   }
 
-  &:nth-child(5n + 5) {
+  &:nth-child(5n) {
     grid-area: 2 / 4 / 4 / 2;
     position: absolute;
     inset: 0;

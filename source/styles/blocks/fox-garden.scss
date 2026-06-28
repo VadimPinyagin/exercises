@@ -1,0 +1,127 @@
+.fox-garden {
+  width: 300px;
+  padding: 8px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 36px;
+  background: #f7f302 url("../../images/bg/kostki-brukowe.jpg") center / cover;
+}
+
+.fox-garden__bed {
+  background: #8e9cff url("../../images/bg/garden-bed.jpg") no-repeat center / cover;
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+
+  // С лева один большой, справа 4 маленьких, следующий ряд зеркально.
+
+  // &:nth-child(10n + 1),
+  // &:nth-child(10n - 2) {
+  //   grid-column: span 2;
+  //   grid-row: span 2;
+  // }
+
+  // С лева один большой, справа 2 верхних маленьких, нижний занимает место 2-х маленьких.
+
+  // &:nth-child(8n + 1),
+  // &:nth-child(8n + 7) {
+  //   grid-column: span 2;
+  //   grid-row: span 2;
+  // }
+
+  // &:nth-child(4n) {
+  //   grid-column: span 2;
+  // }
+
+  &:nth-child(9n) {
+    grid-column: span 2;
+  }
+
+  &:nth-child(9n+1),
+  &:nth-child(9n+8) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+// .fox-garden__bed--mentor {
+//   background: url("../../images/fox/fox-md.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+// }
+
+// .fox-garden__bed--fox-roaming {
+//   background: url("../../images/fox/fox-roaming.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+// }
+
+// .fox-garden__bed--zucchini {
+//   background: url("../../images/vegetables/zucchini.png") no-repeat center / contain, url("../../images/bg/bg-wood.png") no-repeat center / cover, #8e9cff;
+// }
+
+// .fox-garden__bed--attacking {
+//   background: url("../../images/fox/fox-attacking.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+// }
+
+// .fox-garden__bed--cauliflower {
+//   background: url("../../images/vegetables/cauliflower.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+// }
+
+.fox-garden__bed--tomato {
+  background: url("../../images/vegetables/tomato.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--beet {
+  background: url("../../images/vegetables/beet.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--carrot {
+  background: url("../../images/vegetables/carrot.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--eggplant {
+  background: url("../../images/vegetables/eggplant.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--potato {
+  background: url("../../images/vegetables/potato.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--cilantro {
+  background: url("../../images/vegetables/cilantro.png") repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--dill {
+  background: url("../../images/vegetables/dill.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") 0 -60px / 216% no-repeat, #8e9cff;
+}
+
+.fox-garden__bed--onion {
+  background: url("../../images/vegetables/onion.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--radish {
+  background: url("../../images/vegetables/radish.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--pumpkin {
+  background: url("../../images/vegetables/pumpkin.png") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--lamb {
+  background: url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--cumin {
+  background: url("../../images/vegetables/cumin.jpg") no-repeat center / contain, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+.fox-garden__bed--barberry {
+  background: url("../../images/vegetables/barbaris.jpg") no-repeat center / cover, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--basilik {
+  background: url("../../images/vegetables/basilik.jpg") no-repeat center / cover, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}
+
+.fox-garden__bed--cucumber {
+  background: url("../../images/vegetables/cucumber.png") 0 0 / 25% repeat, url("../../images/bg/garden-bed.jpg") no-repeat center / cover, #8e9cff;
+}

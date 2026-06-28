@@ -1,7 +1,7 @@
 .fox-barn {
   width: 300px;
   aspect-ratio: 1;
-  background: url("../../images/bg/barn.png") no-repeat bottom / cover, url("../../images/bg/lawn.png") no-repeat bottom / cover, url("../../images/bg/rain.png")-73px -113px / 146% no-repeat;
+  background: url("../../images/lamb.png") 70px 226px / 17% no-repeat, url("../../images/bg/barn.png") no-repeat bottom / cover, url(../../images/bg/puddle.png) 13px 249px / 27% no-repeat, url("../../images/bg/lawn.png") no-repeat bottom / cover;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,10 +36,10 @@
   background: url("../../images/vegetables/zucchini.png") no-repeat center / contain, url("../../images/bg/wooden-shelf.png") no-repeat center / cover, #8e9cff;
 }
 
-.fox-barn__shelf--lamb {
-  grid-column: 3/5;
-  background: url("../../images/lamb.png") 1px -1px / 80% no-repeat, url("../../images/bg/wooden-shelf.png") no-repeat center / cover;
-}
+// .fox-barn__shelf--lamb {
+//   grid-column: 3/5;
+//   background: url("../../images/lamb.png") 1px -1px / 80% no-repeat, url("../../images/bg/wooden-shelf.png") no-repeat center / cover;
+// }
 
 .fox-barn__shelf--cauliflower {
   background: url("../../images/vegetables/cauliflower.png") no-repeat center / contain, url("../../images/bg/wooden-shelf.png") no-repeat center / cover, #8e9cff;
